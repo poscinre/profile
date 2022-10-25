@@ -1,40 +1,51 @@
 // 메뉴 선택시 이동
+
 {
-  const top = document.querySelector('.top');
+  const $header = document.querySelector('header');
+  const $mnus = document.querySelectorAll('header>nav>.gnb>li>a');
+  const $footer = document.querySelector('footer');
+  const $top = document.querySelector('.top');
+  const $article = document.querySelectorAll('section>.container>article')
+  const $section = document.querySelector('section');
   const logo = document.querySelector('.logo>a')
-  const section = document.querySelector('section');
-  const sections = document.querySelectorAll('article[id]')
-    
-  const scrollActive = () =>{
-      const scrollY = window.pageYOffset
 
-      sections.forEach(current =>{
-          const sectionHeight = current.offsetHeight,
-              sectionTop = current.offsetTop - 58,
-              sectionId = current.getAttribute('id'),
-              sectionsClass = document.querySelector('.gnb a[href*=' + sectionId + ']')
-
-          if(scrollY > sectionTop && scrollY <= sectionTop + sectionHeight){
-              sectionsClass.classList.add('active-link')
-          }else{
-              sectionsClass.classList.remove('active-link')
-          }                                                    
-      })
-  }
-  window.addEventListener('scroll', scrollActive);
-
+  const arrTopVal = [];  
+  let nowIdx = 0;
+  let oldIdx = nowIdx;
+  
+  $article.forEach(function($article, idx){
+      arrTopVal[idx-1] = $article.offsetTop;
+  });
+  $mnus.forEach(function($mnu, idx){
+      $mnu.addEventListener('click', function(evt){
+          evt.preventDefault();
+          $section.scrollTo({top:arrTopVal[idx-1]-5, behavior:'smooth'});
+      });
+  });  
+  $section.addEventListener('scroll', function(){      
+      const scrollTop = Math.ceil($section.scrollY);      
+      for(let i=0;i<$mnus.length;i++){
+          if(scrollTop >= arrTopVal[i]-5){
+              
+              oldIdx = nowIdx;
+              nowIdx = i;
+              
+              $mnus[oldIdx].parentElement.classList.remove('on');
+              $mnus[nowIdx].parentElement.classList.add('on');
+          }else if(scrollTop<arrTopVal[0]-5){
+              $mnus[nowIdx].parentElement.classList.remove('on');
+          }
+      } 
+  });  
+  $top.addEventListener('click', function(evt){
+      evt.preventDefault();
+      $section.scrollTo({top:0, behavior:'smooth'});
+  });
   logo.addEventListener('click', function(evt){
     evt.preventDefault();
-    section.scrollTo({top:0, behavior:'smooth'});
+    $section.scrollTo({top:0, behavior:'smooth'});
   });
-  top.addEventListener('click', function(evt){
-      evt.preventDefault();
-      section.scrollTo({top:0, behavior:'smooth'});
-  });
-
-  
 }
-
 
 // About 모달창
 {
