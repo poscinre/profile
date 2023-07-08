@@ -1,0 +1,725 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>YU'S</title>
+    <link rel="stylesheet" href="./css/reset.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css">
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="shortcut icon" href="images/logo.png" type="image/x-icon">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <script src="http://code.jquery.com/jquery-latest.min.js"></script>
+    <script defer src="./js/script.js"></script>
+</head>  
+<body>
+    <div id="wrap">
+        <header>
+            <h1 class="logo">
+                <a rel="noopener noreferrer" href="#">YU'S</a>
+            </h1>
+            <nav>
+                <ul class="gnb">
+                    <li>
+                        <a class="active-link" rel="noopener noreferrer" href="#intro">
+                            <i class='bx bx-home-alt-2'></i>                           
+                            <span> INTRO</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a rel="noopener noreferrer" href="#about">
+                            <i class='bx bx-user-pin'></i>
+                            <span>ABOUT</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a rel="noopener noreferrer" href="#project">
+                            <i class='bx bx-file-blank' ></i>
+                            <span>PROJECT</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a rel="noopener noreferrer" href="#outro">                            
+                            <i class='bx bx-phone' ></i>
+                            <span>OUTRO</span> 
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+
+
+
+            <div class="myphoto"></div>
+        </header>
+
+
+
+        <section>
+            <div class="container">
+
+                <!-- article_1 = intro -->
+                <article id="intro">
+
+                    <div class='roll'>
+                        안녕하세요
+                        <div class='fancy'>
+                          <ul class='updates'>
+                            <li>프론트엔드 개발자</li>
+                            <li>용감한</li>
+                            <li>기본에 충실한</li>
+                            <li>독창적인</li>
+                            <li>빠릿빠릿한</li>
+                            <li>프론트엔드 개발자</li>      
+                          </ul>    
+                        </div>
+                        유지은입니다
+                      </div>
+                    <div class="firstImg"></div>
+                </article>
+                
+                
+
+                <!-- article_2 = About Me -->
+                <article class="active" id="about">
+                    <div class="aboutme">
+                        <h2>About Me</h2>
+                    </div>
+                    <div class='cards'>
+                        <div class='card openBtn_1' data-card>
+                            <div class='card__inner'>
+                            <div class='card__image'>
+                                <a><img src='./images/logo.jpg' alt='aboutme' /></a>
+                            </div>                
+                            </div>
+                        </div>
+                        <div class="modal_1 hidden">
+                            <div class="modalBox">
+                                <p><img src="./images/aboutme.png" alt="aboutme"></p>
+                            </div>
+                            <img class="closeBtn_1" src="./images/close_white.png" alt="#">
+                        </div>
+                        <div class='card openBtn_3' data-card>
+                            <div class='card__inner'>
+                            <div class='card__image'>
+                                <a href="https://github.com/poscinre/" target="_blank"><img src='./images/github.png' alt='github' /></a>
+                            </div>                
+                            </div>
+                        </div>         
+                        <div class='card openBtn_3' data-card>
+                            <div class='card__inner'>
+                            <div class='card__image'>
+                                <a href="./images/resume_yujieun.pdf" target="_blank"><img src='./images/resume.png' alt='The Fountain' /></a>
+                            </div>                
+                            </div>
+                        </div>                    
+                    </div>
+                </article>
+
+
+
+                <!-- article_3 = Project -->
+                <article id="project">          
+                    <div class="project">
+                        <h2>Project</h2>
+                    </div>
+
+                    <div class="options">
+                        <div class="option option_1 active">
+                            <div class="shadow"></div>
+                            <div class="label">
+                                <div class="icon">
+                                    <img src="./images/plus.png" alt="#">
+                                </div>
+                                <div class="info">
+                                    <div class="main">쇼핑몰 제작</div>
+                                    <div class="sub">React</div>
+                                </div>
+                                <div class="Btn">
+                                    <button class="detailBtn detailBtn_1">작업과정</button>
+                                    <button class="projectBtn projectBtn_1">보러가기</button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="project_modal_1">
+                            <div class="project_modalBox">
+                                <!-- <div class="project_wrap"> -->
+                                    <div class="carousel">
+                                        <div class="carousel__nav">
+                                         <span id="moveLeft" class="carousel__arrow">
+                                            <i class='project_arrow bx bx-left-arrow-alt'></i>
+                                          </span>
+                                          <span id="moveRight" class="carousel__arrow" >
+                                            <i class='project_arrow bx bx-right-arrow-alt'></i>
+                                          </span>
+                                        </div>
+                                        <div class="carousel-item carousel-item--1">
+                                          <div class="carousel-item__image"></div>
+                                          <div class="carousel-item__info">
+                                            <div class="carousel-item__container">
+                                            <h1 class="carousel-item__title">Les Basics</h1>
+                                            <p class="carousel-item__description">
+                                                React로 작업한 쇼핑몰 사이트.<br />
+                                                상품을 누르면 상세페이지로 이동합니다.<br />
+                                                장바구니에 담고, 수량을 조절할 수 있습니다.<br />
+                                                드롭다운 메뉴에서 고객센터, 이용약관, <br />
+                                                Our Story를 확인할 수 있습니다.<br />
+                                                <br /><br />
+                                                <span>사용 기술 및 라이브러리</span><br />
+                                                React, Bootstrap, Styled component, Redux, Javascript, CSS
+                                                <br /><br />
+                                                <span>이미지 출처</span><br />https://lesbasics.store/<br />
+                                            </p>
+                                              </div>
+                                          </div>
+                                        </div>
+                                        <div class="carousel-item carousel-item--2">
+                                          <div class="carousel-item__image"></div>
+                                          <div class="carousel-item__info">
+                                            <div class="carousel-item__container">
+                                            <h1 class="carousel-item__title">Detail Page</h1>
+                                            <p class="carousel-item__description">
+                                                Detail페이지는 메인페이지와의 데이터 바인딩을 위해<br />
+                                                props를 이용해 전달해주었습니다.<br /><br />
+                                                각 페이지는 URL 파라미터로 연결하고,<br />
+                                                useParams()으로 가져오도록 했습니다.<br /><br />
+                                                장바구니 버튼을 누르면 state.push 함수를<br />
+                                                설정하여 추가가 되도록 했습니다.<br />
+                                                <br />
+
+                                                
+                                                
+
+                                                <br />
+                                            </p>
+                                              </div>
+                                          </div>
+                                        </div>
+                                          <div class="carousel-item carousel-item--3">
+                                          <div class="carousel-item__image"></div>
+                                          <div class="carousel-item__info">
+                                            <div class="carousel-item__container">
+                                            <h1 class="carousel-item__title">Cart Page</h1>
+                                            <p class="carousel-item__description">
+                                                Cart의 경우 Redux를 사용하여 state를<br />
+                                                공유하도록 했습니다.<br /><br />
+
+                                                findIndex() 함수로 상품 고유의 id를 찾아,<br />
+                                                각각 변경이 되도록 연결해주었습니다.<br /><br />
+
+                                                상품 수량을 변경할 수 있게 함수에<br />
+                                                +, -, 삭제 파라미터 문법을 사용하였습니다.<br />
+
+                                                <br />
+                                            </p>
+                                              </div>
+                                          </div>
+                                        </div>
+                                      <!-- </div> -->
+                                </div>
+                            </div>
+                            <img class="project_closeBtn_1" src="./images/close_white.png" alt="#"/>
+                        </div>
+
+
+
+                        <div class="option option_2">
+                            <div class="shadow"></div>
+                            <div class="label">
+                                <div class="icon">
+                                <img src="./images/plus.png" alt="#">
+                                </div>
+                                <div class="info">
+                                <div class="main">넷플릭스 클론 코딩</div>
+                                <div class="sub">React</div>
+                                </div>
+                                <div class="Btn">
+                                    <button class="detailBtn detailBtn_2">작업과정</button>
+                                    <button class="projectBtn projectBtn_2">보러가기</button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="project_modal_2">
+                            <div class="project_modalBox">
+                                    <div class="carousel">
+                                        <div class="carousel__nav">
+                                         <span id="moveLeft2" class="carousel__arrow">
+                                            <i class='project_arrow bx bx-left-arrow-alt'></i>
+                                          </span>
+                                          <span id="moveRight2" class="carousel__arrow" >
+                                            <i class='project_arrow bx bx-right-arrow-alt'></i>
+                                          </span>
+                                        </div>
+                                        <div class="carousel-item2 carousel-item--1">
+                                          <div class="carousel-item__image"></div>
+                                          <div class="carousel-item__info">
+                                            <div class="carousel-item__container">
+                                            <h1 class="carousel-item__title">Netflix Clone</h1>
+                                            <p class="carousel-item__description">
+                                                넷플릭스 클론 코딩 '유플릭스'입니다.<br />
+                                                각 영상을 누르면 예고편을 감상할 수 있습니다.<br />
+                                                상단 Nav에는 홈페이지로 갈 수 있는<br />
+                                                로고와 로그인 버튼이 있습니다.<br />
+                                                이미지와 타이틀, 설명을 랜덤으로 받아와<br />
+                                                 메인에 나타내었습니다.<br />
+                                                각 Row에서는 슬라이드 형태로<br />
+                                                 API를 통해 이미지를 나열했습니다.<br />
+                                        
+
+                                                <br /><br />
+                                                <span>사용 기술 및 라이브러리</span><br />
+                                                React, Bootstrap, Styled component, Firebase, Javascript, 
+                                                CSS, Context API, Axios, Modal, YouTube, movieTrailer
+                                                <br /><br />
+                                            </p>
+                                              </div>
+                                          </div>
+                                        </div>
+                                        <div class="carousel-item2 carousel-item--2">
+                                          <div class="carousel-item__image"></div>
+                                          <div class="carousel-item__info">
+                                            <div class="carousel-item__container">
+                                            <h1 class="carousel-item__title">Firebase</h1>
+                                            <p class="carousel-item__description">
+                                                Firebase를 이용해 백엔드를 대신하였습니다.<br />
+                                                이메일과 비밀번호를 입력하면 가입할 수 있습니다.<br /><br />
+                                                가입정보는 Firebase Cloud에 저장되어,<br />
+                                                로그인 및 로그아웃이 가능합니다.<br />                                                
+                                                <br />
+                                                <br /><br />
+                                            </p>
+                                              </div>
+                                          </div>
+                                        </div>
+                                          <div class="carousel-item2 carousel-item--3">
+                                          <div class="carousel-item__image"></div>
+                                          <div class="carousel-item__info">
+                                            <div class="carousel-item__container">
+                                            <h1 class="carousel-item__title">Row</h1>
+                                            <p class="carousel-item__description">                                                
+                                                axios로 각 Row에 해당하는 정보를 불러오고,<br />
+                                                map() 함수로 여러개 나열하도록 하였습니다.<br /><br />
+                                                예고편 영상은 Modal 라이브러리를 이용,<br />
+                                                모달창을 이용해 보여지게 만들었습니다.<br /><br />
+                                                이미지를 클릭 할 때마다 고유의 id를 가져와<br />
+                                                movieTrailer와 연결하였습니다.<br />
+
+                                                <br /><br />
+                                            </p>
+                                              </div>
+                                          </div>
+                                        </div>
+                                </div>
+                            </div>
+                            <img class="project_closeBtn_2" src="./images/close_white.png" alt="#"/>
+                        </div>
+
+                        <div class="option option_3">
+                            <div class="shadow"></div>
+                            <div class="label">
+                                <div class="icon">
+                                <img src="./images/plus.png" alt="#">
+                                </div>
+                                <div class="info">
+                                <div class="main">웹사이트 제작</div>
+                                <div class="sub">HTML/CSS/Javascript</div>
+                                </div>
+                                <div class="Btn">
+                                    <button class="detailBtn detailBtn_3">작업과정</button>
+                                    <button class="projectBtn projectBtn_3">보러가기</button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="project_modal_3">
+                            <div class="project_modalBox">
+                                    <div class="carousel">
+                                        <div class="carousel__nav">
+                                         <span id="moveLeft3" class="carousel__arrow">
+                                            <i class='project_arrow bx bx-left-arrow-alt'></i>
+                                          </span>
+                                          <span id="moveRight3" class="carousel__arrow" >
+                                            <i class='project_arrow bx bx-right-arrow-alt'></i>
+                                          </span>
+                                        </div>
+                                        <div class="carousel-item3 carousel-item--1">
+                                          <div class="carousel-item__image"></div>
+                                          <div class="carousel-item__info">
+                                            <div class="carousel-item__container">
+                                            <h1 class="carousel-item__title">프론트엔더스</h1>
+                                            <p class="carousel-item__description">
+                                                프론트엔드 개발자 커뮤니티를 주제로<br />
+                                                Javascript를 이용해 만들었습니다.<br />
+                                                반응형 웹사이트로 모바일에서 태블릿, <br />
+                                                PC까지 대응이 가능합니다.<br />
+                                                다크모드를 적용해 사용자가 테마를<br />
+                                                선택할 수 있도록 했습니다.<br />
+
+                                                <br /><br />
+                                                <span>사용 기술 및 라이브러리</span><br />
+                                                HTML, CSS, Javascript
+                                                <br /><br />
+                                            </p>
+                                              </div>
+                                          </div>
+                                        </div>
+                                        <div class="carousel-item3 carousel-item--2">
+                                          <div class="carousel-item__image"></div>
+                                          <div class="carousel-item__info">
+                                            <div class="carousel-item__container">
+                                            <h1 class="carousel-item__title">아코디언 메뉴</h1>
+                                            <p class="carousel-item__description">
+                                                커뮤니티 부분은 클릭 시 오픈되고,<br />
+                                                다시 클릭시 닫히는 토글 기능을 추가해<br />
+                                                아코디언 메뉴로 만들었습니다.<br /><br />
+                                                또한 class에 아코디언 오픈이 추가될 때<br />
+                                                내용의 높이만큼 확장되고,<br />
+                                                닫을때는 class에서 remove하는 방식을 이용했습니다.<br />
+                                                <br /><br />
+                                            </p>
+                                              </div>
+                                          </div>
+                                        </div>
+                                          <div class="carousel-item3 carousel-item--3">
+                                          <div class="carousel-item__image"></div>
+                                          <div class="carousel-item__info">
+                                            <div class="carousel-item__container">
+                                            <h1 class="carousel-item__title">다크 모드</h1>
+                                            <p class="carousel-item__description">
+                                                다크모드는 theme를 바꿀 수 있도록 버튼을 만들고,<br />
+                                                default 밝은 상태에서 클릭시 다크모드로 전환됩니다.<br />
+                                                darkTheme이 class에 추가될 경우,<br /> 
+                                                다크모드로 전환되도록<br />
+                                                darkTheme의 CSS를 추가했습니다.<br />
+                                                새로고침해도 현재 모드가 변하지 않도록<br />
+                                                localStorage에 저장됩니다.<br />
+                                                <br />
+
+                                                <br /><br />
+                                            </p>
+                                              </div>
+                                          </div>
+                                        </div>
+                                </div>
+                            </div>
+                            <img class="project_closeBtn_3" src="./images/close_white.png" alt="#"/>
+                        </div>
+
+
+
+
+
+                        <div class="option option_4">
+                            <div class="shadow"></div>
+                            <div class="label">
+                                <div class="icon">
+                                    <img src="./images/plus.png" alt="#">
+                                </div>
+                                <div class="info">
+                                    <div class="main">공주 여행 사이트 제작</div>
+                                    <div class="sub">HTML/CSS/Javascript</div>
+                                </div>
+                                <div class="Btn">
+                                    <button class="detailBtn detailBtn_4">작업과정</button>
+                                    <button class="projectBtn projectBtn_4">보러가기</button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="project_modal_4">
+                            <div class="project_modalBox">
+                                    <div class="carousel">
+                                        <div class="carousel__nav">
+                                         <span id="moveLeft4" class="carousel__arrow">
+                                            <i class='project_arrow bx bx-left-arrow-alt'></i>
+                                          </span>
+                                          <span id="moveRight4" class="carousel__arrow" >
+                                            <i class='project_arrow bx bx-right-arrow-alt'></i>
+                                          </span>
+                                        </div>
+                                        <div class="carousel-item4 carousel-item--1">
+                                          <div class="carousel-item__image"></div>
+                                          <div class="carousel-item__info">
+                                            <div class="carousel-item__container">
+                                            <h1 class="carousel-item__title">흥미진진공주</h1>
+                                            <p class="carousel-item__description">
+                                                공주의 풍경과 문화, 역사를 보여주는<br />
+                                                원페이지 웹사이트입니다.<br />
+                                                축제/체험, 역사/문화, 관광명소, 여행정보<br />
+                                                4개의 카테고리로 나누어 공주를 소개하고 있습니다.<br />
+
+                                                <br /><br />
+                                                <span>사용 기술 및 라이브러리</span><br />
+                                                HTML, CSS, Javascript
+                                                <br /><br />
+                                                <span>이미지 출처</span><br />https://www.gongju.go.kr/tour/<br />
+                                            </p>
+                                              </div>
+                                          </div>
+                                        </div>
+                                        <div class="carousel-item4 carousel-item--2">
+                                          <div class="carousel-item__image"></div>
+                                          <div class="carousel-item__info">
+                                            <div class="carousel-item__container">
+                                            <h1 class="carousel-item__title">메뉴 활성화</h1>
+                                            <p class="carousel-item__description">
+                                                Nav 메뉴는 카테고리를 선택하면 활성화되며,<br />
+                                                색상이 변경됩니다. 또한<br />
+                                                각 article로 스크롤이 이동됩니다.<br />
+                                                오른쪽 하단의 화살표와 왼쪽 상단의 로고를 누르면<br />                                              
+                                                TOP으로 이동합니다.<br />
+
+                                                <br /><br />
+                                            </p>
+                                              </div>
+                                          </div>
+                                        </div>
+                                          <div class="carousel-item4 carousel-item--3">
+                                          <div class="carousel-item__image"></div>
+                                          <div class="carousel-item__info">
+                                            <div class="carousel-item__container">
+                                            <h1 class="carousel-item__title">슬라이드</h1>
+                                            <p class="carousel-item__description">
+                                                첫번째 슬라이드는 인디케이터를 추가해<br />
+                                                원하는 순번의 사진을 볼 수 있습니다.<br /><br />
+                                                두번째 슬라이드는 이전 다음 버튼을 이용해<br />
+                                                공주의 풍경을 감상할 수 있습니다.<br />
+                                                <br /><br />
+                                            </p>
+                                              </div>
+                                          </div>
+                                        </div>
+                                </div>
+                            </div>
+                            <img class="project_closeBtn_4" src="./images/close_white.png" alt="#"/>
+                        </div>
+
+
+
+
+
+
+                        <div class="option option_5">
+                            <div class="shadow"></div>
+                            <div class="label">
+                                <div class="icon">
+                                    <img src="./images/plus.png" alt="#">
+                                </div>
+                                <div class="info">
+                                    <div class="main">딸기수확 게임 제작</div>
+                                    <div class="sub">HTML/CSS/Javascript</div>
+                                </div>
+                                <div class="Btn">
+                                    <button class="detailBtn detailBtn_5">작업과정</button>
+                                    <button class="projectBtn projectBtn_5">보러가기</button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="project_modal_5">
+                            <div class="project_modalBox">
+                                    <div class="carousel">
+                                        <div class="carousel__nav">
+                                         <span id="moveLeft5" class="carousel__arrow">
+                                            <i class='project_arrow bx bx-left-arrow-alt'></i>
+                                          </span>
+                                          <span id="moveRight5" class="carousel__arrow" >
+                                            <i class='project_arrow bx bx-right-arrow-alt'></i>
+                                          </span>
+                                        </div>
+                                        <div class="carousel-item5 carousel-item--1">
+                                          <div class="carousel-item__image"></div>
+                                          <div class="carousel-item__info">
+                                            <div class="carousel-item__container">
+                                            <h1 class="carousel-item__title">딸기수확게임</h1>
+                                            <p class="carousel-item__description">
+                                                Javascript로 만든 딸기 수확 게임입니다.<br />
+                                                시작버튼을 누르면 시간이 줄어들며<br />
+                                                거미를 피해서 딸기를 클릭해야합니다.<br />
+                                                <br />
+
+                                                <br /><br />
+                                                <span>사용 기술 및 라이브러리</span><br />
+                                                HTML, CSS, Javascript
+                                                <br /><br />
+                                            </p>
+                                              </div>
+                                          </div>
+                                        </div>
+                                        <div class="carousel-item5 carousel-item--2">
+                                          <div class="carousel-item__image"></div>
+                                          <div class="carousel-item__info">
+                                            <div class="carousel-item__container">
+                                            <h1 class="carousel-item__title">랜덤 좌표</h1>
+                                            <p class="carousel-item__description">
+                                                class를 구분해 모듈 형태로 제작하였습니다.<br /><br />
+                                                딸기와 거미의 갯수, 이미지 경로를 인자값에 할당시켜<br />
+                                                지정한 갯수만큼 html, style값을 생성하는 함수를 만들고,<br />
+                                                랜덤함수를 사용하여 거미와 딸기가 윈도우 내에<br /> 
+                                                임의의 좌표로 출력되도록 구현하였습니다.<br />
+                                                <br />
+                                                <br />
+
+                                                <br /><br />
+                                            </p>
+                                              </div>
+                                          </div>
+                                        </div>
+                                          <div class="carousel-item5 carousel-item--3">
+                                          <div class="carousel-item__image"></div>
+                                          <div class="carousel-item__info">
+                                            <div class="carousel-item__container">
+                                            <h1 class="carousel-item__title">타이머</h1>
+                                            <p class="carousel-item__description">
+                                                setInterval()을 사용해 시간을 줄여나가고<br />
+                                                0초가 되거나 게임에서 지면,<br />
+                                                clearInterval()이 실행되도록 했습니다.<br />
+                                                남은 시간이 분, 초로 표시되며,<br />
+                                                리셋시 모든 텍스트가 초기화됩니다.<br />
+                                                <br /><br />
+                                            </p>
+                                              </div>
+                                          </div>
+                                        </div>
+                                </div>
+                            </div>
+                            <img class="project_closeBtn_5" src="./images/close_white.png" alt="#"/>
+                        </div>
+
+                        
+
+
+
+
+
+                        <div class="option option_6">
+                            <div class="shadow"></div>
+                            <div class="label">
+                                <div class="icon">
+                                    <img src="./images/plus.png" alt="#">
+                                </div>
+                                <div class="info">             
+                                    <div class="main">가위바위보 게임 제작</div>
+                                    <div class="sub">HTML/CSS/Javascript</div>
+                                </div>
+                                <div class="Btn">
+                                    <button class="detailBtn detailBtn_6">작업과정</button>
+                                    <button class="projectBtn projectBtn_6">보러가기</button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="project_modal_6">
+                            <div class="project_modalBox">
+                                    <div class="carousel">
+                                        <div class="carousel__nav">
+                                         <span id="moveLeft6" class="carousel__arrow">
+                                            <i class='project_arrow bx bx-left-arrow-alt'></i>
+                                          </span>
+                                          <span id="moveRight6" class="carousel__arrow" >
+                                            <i class='project_arrow bx bx-right-arrow-alt'></i>
+                                          </span>
+                                        </div>
+                                        <div class="carousel-item6 carousel-item--1">
+                                          <div class="carousel-item__image"></div>
+                                          <div class="carousel-item__info">
+                                            <div class="carousel-item__container">
+                                            <h1 class="carousel-item__title">가위바위보</h1>
+                                            <p class="carousel-item__description">
+                                                Javascript로 만든 가위바위보 게임입니다.<br />
+                                                시작버튼을 누르면 가위바위보 버튼이 활성화됩니다.<br />
+                                                총 10판의 게임이 진행되며 컴퓨터와 대결해야합니다.<br />
+                                                10판후 점수 및 승부 결과가 화면에 나타나고,<br />
+                                                시작버튼을 눌러 다시 시작 할 수 있습니다.<br />
+                                                <br /><br />
+                                                <span>사용 기술 및 라이브러리</span><br />
+                                                HTML, CSS, Javascript
+                                                <br /><br />
+                                            </p>
+                                              </div>
+                                          </div>
+                                        </div>
+                                        <div class="carousel-item6 carousel-item--2">
+                                          <div class="carousel-item__image"></div>
+                                          <div class="carousel-item__info">
+                                            <div class="carousel-item__container">
+                                            <h1 class="carousel-item__title">승부 결정 구조</h1>
+                                            <p class="carousel-item__description">
+                                                가위바위보 각 버튼에 onclick 이벤트를 설정하고,<br />
+                                                버튼을 누를때마다 0, 1, 2의 input 값을 받습니다.<br />
+                                                컴퓨터는 0, 1, 2 중 랜덤한 숫자를 생성합니다.<br />
+                                                그 값을 input 값과 비교하여 승부를 결정합니다.<br />
+
+                                                <br /><br />
+                                            </p>
+                                              </div>
+                                          </div>
+                                        </div>
+                                          <div class="carousel-item6 carousel-item--3">
+                                          <div class="carousel-item__image"></div>
+                                          <div class="carousel-item__info">
+                                            <div class="carousel-item__container">
+                                            <h1 class="carousel-item__title">결과 표시하기</h1>
+                                            <p class="carousel-item__description">
+                                                9번째까지 count가 더해지고,<br />
+                                                10번째판이 되면 win, lose, draw의 값을<br />
+                                                비교해 최종 결과가 나타납니다.<br />
+                                                <br />
+
+                                                <br /><br />
+                                            </p>
+                                              </div>
+                                          </div>
+                                        </div>
+                                </div>
+                            </div>
+                            <img class="project_closeBtn_6" src="./images/close_white.png" alt="#"/>
+                        </div>
+                    </div>        
+                </article>
+            
+
+
+                <!-- article_4 = Contact -->
+                <article id="outro">          
+                    <div class="terminal">
+                        <div class="terminal-header">
+                            <ul>
+                            <li></li>
+                            <li></li>
+                            <li></li>
+                            </ul>
+                        </div>
+                        <div class="terminal-body">
+                            <p class="contact">
+                                <span># Contact</span>
+                                <a href="tel:010-3302-5402">010 3302 5402</a><br />
+                                <a href="mailto:poscinre@gmail.com">poscinre@gmail.com</a>
+                            </p>
+                        </div>
+                    </div>                       
+                    <div class="copyrights">
+                        <p>&copy; 2022 Yu Jieun<br />
+                        All Rights Reserved.</p>
+                    </div>
+                </article>
+
+            </div>
+        </section>
+
+
+
+
+        <footer>
+            <a class="dark" rel="noopener noreferrer" href="#">
+                <i class='bx bx-moon change-theme' id="theme-button"></i>
+            </a>
+            <a class="top" rel="noopener noreferrer" href="#">
+                <i class="fa fa-home" aria-hidden="true"></i>
+            </a>
+            <a class="git" href="https://github.com/poscinre/" target="_blank">
+                <i class="fab  fa-github"></i>
+            </a>
+            <a class="mail" href="mailto:poscinre@gmail.com">
+                <i class="fa fa-envelope" aria-hidden="true"></i>
+            </a>
+        </footer>
+    </div>
+</body>
+</html>
